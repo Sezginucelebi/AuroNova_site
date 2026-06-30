@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title data-i18n="nav_projects">Projelerimiz - AuroNova Yazılım</title>
+
+  <!-- Favicons -->
+  <link href="AuroNova_logo.png" rel="icon" type="image/png">
+  <link href="AuroNova_logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=2.1" rel="stylesheet">
+</head>
+
+<body class="projects-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto pe-lg-5">
+        <img src="AuroNova_logo.png" alt="AuroNova" style="max-height: 75px; width: auto;">
+        <h1 class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Yazılım</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+          <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+          <li><a href="projects.html" class="active" data-i18n="nav_projects">Projelerimiz</a></li>
+          <li><a href="domain.html" data-i18n="nav_domain">Domain</a></li>
+          <li><a href="hosting.html" data-i18n="nav_hosting">Hosting</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+          <li><a href="javascript:void(0)" id="nav-auth-btn" class="ms-lg-3" data-bs-toggle="modal" data-bs-target="#authModal" data-i18n="nav_login">Üye Girişi</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="lang-switcher">
+        <a href="#" class="active">TR</a>
+        <span>|</span>
+        <a href="#">EN</a>
+      </div>
+
+      <a class="cart-toggle" data-bs-toggle="offcanvas" href="#offcanvasCart" role="button" aria-controls="offcanvasCart">
+        <i class="bi bi-cart3"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0" data-i18n="nav_projects">Projelerimiz</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+            <li class="current" data-i18n="nav_projects">Projelerimiz</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="visual-project-card">
+              <div class="project-img-container">
+                <img src="https://via.placeholder.com/400x300?text=AuroNova+Project+1" alt="" class="img-fluid">
+              </div>
+              <div class="project-info-container">
+                <h4 data-i18n="project_1_title">Proje 1</h4>
+                <p data-i18n="project_1_desc">Proje açıklaması buraya gelecek.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="visual-project-card">
+              <div class="project-img-container">
+                <img src="https://via.placeholder.com/400x300?text=AuroNova+Project+2" alt="" class="img-fluid">
+              </div>
+              <div class="project-info-container">
+                <h4 data-i18n="project_2_title">Proje 2</h4>
+                <p data-i18n="project_2_desc">Proje açıklaması buraya gelecek.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="visual-project-card">
+              <div class="project-img-container">
+                <img src="https://via.placeholder.com/400x300?text=AuroNova+Project+3" alt="" class="img-fluid">
+              </div>
+              <div class="project-info-container">
+                <h4 data-i18n="project_3_title">Proje 3</h4>
+                <p data-i18n="project_3_desc">Proje açıklaması buraya gelecek.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="visual-project-card">
+              <div class="project-img-container">
+                <img src="https://via.placeholder.com/400x300?text=AuroNova+Project+4" alt="" class="img-fluid">
+              </div>
+              <div class="project-info-container">
+                <h4 data-i18n="project_4_title">Proje 4</h4>
+                <p data-i18n="project_4_desc">Proje açıklaması buraya gelecek.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Yazılım</span></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>İstanbul, Türkiye</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Yazılım</span></strong><span data-i18n="footer_rights">All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div class="global-planet-decor"></div>
+
+  <!-- Translation JS -->
+  <script src="assets/js/translations.js?v=2.1"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js?v=2.1"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title data-i18n="domain_title">Domain Sorgulama - AuroNova Yazılım</title>
+  <meta name="description" content="AuroNova Yazılım Domain Sorgulama ve Kayıt Hizmetleri">
+  <meta name="keywords" content="domain, alan adı, domain sorgulama, auronova">
+
+  <!-- Favicons -->
+  <link href="AuroNova_logo.png" rel="icon" type="image/png">
+  <link href="AuroNova_logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=2.1" rel="stylesheet">
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto pe-lg-5">
+        <img src="AuroNova_logo.png" alt="AuroNova" style="max-height: 75px; width: auto;">
+        <h1 class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Yazılım</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+          <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+          <li><a href="projects.html" data-i18n="nav_projects">Projelerimiz</a></li>
+          <li><a href="domain.html" class="active" data-i18n="nav_domain">Domain</a></li>
+          <li><a href="hosting.html" data-i18n="nav_hosting">Hosting</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+          <li><a href="javascript:void(0)" id="nav-auth-btn" class="ms-lg-3" data-bs-toggle="modal" data-bs-target="#authModal" data-i18n="nav_login">Üye Girişi</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="lang-switcher">
+        <a href="#" class="active">TR</a>
+        <span>|</span>
+        <a href="#">EN</a>
+      </div>
+
+      <a class="cart-toggle" data-bs-toggle="offcanvas" href="#offcanvasCart" role="button" aria-controls="offcanvasCart">
+        <i class="bi bi-cart3"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0" data-i18n="domain_title">Domain Sorgulama</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+            <li class="current" data-i18n="nav_domain">Domain</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Domain Search Section -->
+    <section id="domain-search" class="starter-section section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="domain_hero_title">Hayalinizdeki Alan Adını Bulun</h2>
+        <p data-i18n="domain_hero_subtitle">Auro<span class="nova-text">Nova</span> ile projeniz için en uygun domaini saniyeler içinde sorgulayın ve kaydedin.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control form-control-lg" placeholder="domainadiniz.com" data-i18n="domain_search_placeholder" aria-label="Domain Sorgula" value="">
+              <button class="btn btn-primary btn-lg" type="button" data-i18n="domain_search_btn">Sorgula</button>
+            </div>
+
+            <!-- Domain Search Result -->
+            <div class="domain-result-box" style="display: none;">
+              <div class="domain-status available">
+                <div>
+                  <h4 class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong id="searched-domain"></strong> <span data-i18n="domain_available">müsait!</span></h4>
+                  <small class="text-muted" data-i18n="domain_available_desc">Bu alan adını hemen kaydedebilirsiniz.</small>
+                </div>
+                <div class="text-end">
+                  <span class="fs-4 fw-bold text-primary price-tag" data-admin-id="domain_main" data-price-try="249">₺249</span><small>/<span data-i18n="plan_year">yıl</span></small>
+                  <br>
+                  <button class="btn btn-success btn-sm mt-2" data-i18n="domain_add_to_cart">Sepete Ekle</button>
+                </div>
+              </div>
+
+              <!-- Domain Suggestions -->
+              <div class="suggestion-list">
+                <h5 class="mb-4" data-i18n="domain_suggestions">Önerilen Alternatifler</h5>
+
+                <div class="suggestion-item">
+                  <div class="d-flex align-items-center">
+                    <span class="suggestion-name">auronova.net</span>
+                    <span class="badge-available ms-3" data-i18n="domain_available_short">Müsait</span>
+                  </div>
+                  <div>
+                    <span class="suggestion-price price-tag" data-admin-id="domain_net" data-price-try="199">₺199</span>
+                    <button class="btn btn-outline-primary btn-sm ms-3"><i class="bi bi-cart-plus"></i></button>
+                  </div>
+                </div>
+
+                <div class="suggestion-item">
+                  <div class="d-flex align-items-center">
+                    <span class="suggestion-name">auronova.org</span>
+                    <span class="badge-available ms-3" data-i18n="domain_available_short">Müsait</span>
+                  </div>
+                  <div>
+                    <span class="suggestion-price price-tag" data-admin-id="domain_org" data-price-try="219">₺219</span>
+                    <button class="btn btn-outline-primary btn-sm ms-3"><i class="bi bi-cart-plus"></i></button>
+                  </div>
+                </div>
+
+                <div class="suggestion-item">
+                  <div class="d-flex align-items-center">
+                    <span class="suggestion-name">auronova.io</span>
+                    <span class="badge-available ms-3" data-i18n="domain_available_short">Müsait</span>
+                  </div>
+                  <div>
+                    <span class="suggestion-price price-tag" data-admin-id="domain_io" data-price-try="899">₺899</span>
+                    <button class="btn btn-outline-primary btn-sm ms-3"><i class="bi bi-cart-plus"></i></button>
+                  </div>
+                </div>
+
+                <div class="suggestion-item">
+                  <div class="d-flex align-items-center">
+                    <span class="suggestion-name">auronovayazilim.com</span>
+                    <span class="badge-available ms-3" data-i18n="domain_available_short">Müsait</span>
+                  </div>
+                  <div>
+                    <span class="suggestion-price price-tag" data-admin-id="domain_yazilim" data-price-try="249">₺249</span>
+                    <button class="btn btn-outline-primary btn-sm ms-3"><i class="bi bi-cart-plus"></i></button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Yazılım</span></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>İstanbul, Türkiye</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-i18n="footer_useful_links">Faydalı Bağlantılar</h4>
+          <ul>
+            <li><a href="#" data-i18n="nav_home">Ana Sayfa</a></li>
+            <li><a href="#" data-i18n="nav_about">Hakkımızda</a></li>
+            <li><a href="#" data-i18n="nav_hosting">Hizmetler</a></li>
+            <li><a href="#" data-i18n="terms_service">Kullanım Şartları</a></li>
+            <li><a href="#" data-i18n="privacy_policy">Gizlilik Politikası</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Yazılım</span></strong><span data-i18n="footer_rights">Tüm Hakları Saklıdır</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Shopping Cart Offcanvas -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasCartLabel"><i class="bi bi-cart3 me-2"></i><span data-i18n="cart_title">Sepetiniz</span></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="cart-items">
+        <!-- Sepet Boş -->
+      </div>
+
+      <div class="cart-total" style="display: none;">
+        <div class="d-flex justify-content-between mb-2">
+          <span data-i18n="cart_subtotal">Ara Toplam</span>
+          <span class="fw-bold">₺0</span>
+        </div>
+        <div class="d-flex justify-content-between fs-4 fw-bold border-top pt-3">
+          <span data-i18n="cart_total">Toplam</span>
+          <span class="text-primary">₺0</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary w-100 btn-lg mt-4" data-i18n="cart_checkout">Ödemeye Geç <i class="bi bi-arrow-right ms-2"></i></button>
+      <button class="btn btn-outline-secondary w-100 mt-2" data-bs-dismiss="offcanvas" data-i18n="cart_continue">Alışverişe Devam Et</button>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 text-center" style="border-radius: 20px; border: none;">
+        <div class="modal-body">
+          <div class="mb-3"><i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i></div>
+          <h3 class="fw-bold" style="color: #041897;" data-i18n="contact_sent_title">Tebrikler!</h3>
+          <p class="text-muted" data-i18n="contact_sent">Mesajınız başarıyla iletildi.</p>
+          <button type="button" class="btn btn-primary w-100 mt-3" data-bs-dismiss="modal" style="background: #041897; border-radius: 10px;" data-i18n="auth_continue_btn">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="global-planet-decor"></div>
+
+  <!-- Translation JS -->
+  <script src="assets/js/translations.js?v=2.1"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js?v=2.1"></script>
+
+</body>
+
+</html>

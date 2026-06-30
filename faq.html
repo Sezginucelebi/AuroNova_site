@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title data-i18n="faq_title">Sıkça Sorulan Sorular</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="AuroNova_logo.png" rel="icon" type="image/png">
+  <link href="AuroNova_logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=2.1" rel="stylesheet">
+</head>
+
+<body class="faq-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto pe-lg-5">
+        <img src="AuroNova_logo.png" alt="AuroNova" style="max-height: 75px; width: auto;">
+        <h1 class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Software</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+          <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+          <li><a href="projects.html" data-i18n="nav_projects">Projelerimiz</a></li>
+          <li><a href="domain.html" data-i18n="nav_domain">Domain</a></li>
+          <li><a href="hosting.html" data-i18n="nav_hosting">Hosting</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+          <li><a href="javascript:void(0)" id="nav-auth-btn" class="ms-lg-3" data-bs-toggle="modal" data-bs-target="#authModal" data-i18n="nav_login">Üye Girişi</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="lang-switcher">
+        <a href="#" class="active">TR</a>
+        <span>|</span>
+        <a href="#">EN</a>
+      </div>
+
+      <a class="cart-toggle" data-bs-toggle="offcanvas" href="#offcanvasCart" role="button" aria-controls="offcanvasCart">
+        <i class="bi bi-cart3"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0" data-i18n="faq_title">Sıkça Sorulan Sorular</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+            <li class="current" data-i18n="faq_title">SSS</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3 data-i18n="faq_q1">Hizmetleriniz için ne kadar sürede teslimat yapıyorsunuz?</h3>
+                <div class="faq-content"><p data-i18n="faq_a1">Süreler değişiklik göstermektedir.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Software</span></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>İstanbul, Türkiye</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Software</span></strong><span data-i18n="footer_rights">All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Shopping Cart Offcanvas -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasCartLabel"><i class="bi bi-cart3 me-2"></i><span data-i18n="cart_title">Sepetiniz</span></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="cart-items"></div>
+      <div class="cart-total" style="display: none;">
+        <div class="d-flex justify-content-between mb-2"><span data-i18n="cart_subtotal">Ara Toplam</span><span class="fw-bold">₺0</span></div>
+        <div class="d-flex justify-content-between fs-4 fw-bold border-top pt-3"><span data-i18n="cart_total">Toplam</span><span class="text-primary">₺0</span></div>
+      </div>
+      <button class="btn btn-primary w-100 btn-lg mt-4" data-i18n="cart_checkout">Ödemeye Geç <i class="bi bi-arrow-right ms-2"></i></button>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 text-center" style="border-radius: 20px; border: none;">
+        <div class="modal-body">
+          <div class="mb-3"><i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i></div>
+          <h3 class="fw-bold" style="color: #041897;" data-i18n="contact_sent_title">Tebrikler!</h3>
+          <p class="text-muted" data-i18n="contact_sent">Mesajınız başarıyla iletildi.</p>
+          <button type="button" class="btn btn-primary w-100 mt-3" data-bs-dismiss="modal" style="background: #041897; border-radius: 10px;" data-i18n="auth_continue_btn">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="global-planet-decor"></div>
+  <script src="assets/js/translations.js?v=2.1"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js?v=2.1"></script>
+</body>
+
+</html>

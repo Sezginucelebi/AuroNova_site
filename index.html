@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ana Sayfa - AuroNova Software</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="AuroNova_logo.png" rel="icon" type="image/png">
+  <link href="AuroNova_logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css?v=2.1" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto pe-lg-5">
+        <img src="AuroNova_logo.png" alt="AuroNova" style="max-height: 75px; width: auto;">
+        <h1 class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Software</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active" data-i18n="nav_home">Ana Sayfa</a></li>
+          <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+          <li><a href="projects.html" data-i18n="nav_projects">Projelerimiz</a></li>
+          <li><a href="domain.html" data-i18n="nav_domain">Domain</a></li>
+          <li><a href="hosting.html" data-i18n="nav_hosting">Hosting</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+          <li><a href="javascript:void(0)" id="nav-auth-btn" class="ms-lg-3" data-bs-toggle="modal" data-bs-target="#authModal" data-i18n="nav_login">Üye Girişi</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="lang-switcher">
+        <a href="#" class="active">TR</a>
+        <span>|</span>
+        <a href="#">EN</a>
+      </div>
+
+      <a class="cart-toggle" data-bs-toggle="offcanvas" href="#offcanvasCart" role="button" aria-controls="offcanvasCart">
+        <i class="bi bi-cart3"></i>
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up" data-i18n="hero_title">Welcome to Auro<span class="nova-text">Nova</span> Software</h1>
+          <p data-aos="fade-up" data-aos-delay="100" data-i18n="hero_subtitle">Quickly start your project now and set the stage for success</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link" data-i18n="feat_title_1">Software Development</a></h4>
+                <p class="description" data-i18n="feat_desc_1">We offer scalable and high-performance software solutions tailored to your needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-globe"></i></div>
+              <div>
+                <h4 class="title"><a href="domain.html" class="stretched-link" data-i18n="feat_title_2">Domain & Hosting</a></h4>
+                <p class="description" data-i18n="feat_desc_2">Find the best domain for your project and host it on our high-speed servers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+              <div>
+                <h4 class="title"><a href="about.html" class="stretched-link" data-i18n="feat_title_3">Digital Strategy</a></h4>
+                <p class="description" data-i18n="feat_desc_3">Unleash your brand's potential in the digital world with creative strategies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="features_title">Features</h2>
+        <p data-i18n="features_subtitle">Meet our solutions that aim for excellence in technology.</p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center">
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                  <i class="bi bi-binoculars"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block" data-i18n="features_tab_1_title">Fast & Reliable</h4>
+                    <p data-i18n="features_tab_1_desc">We provide the best performance in your projects without compromising on speed and security.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                  <i class="bi bi-box-seam"></i>
+                  <div>
+                    <h4 class="d-none d-lg-block" data-i18n="features_tab_2_title">Scalable</h4>
+                    <p data-i18n="features_tab_2_desc">We offer modern architectures that can flex and grow with your business.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="tab-pane fade active show" id="features-tab-1"><img src="assets/img/tabs-1.jpg" alt="" class="img-fluid"></div>
+              <div class="tab-pane fade" id="features-tab-2"><img src="assets/img/tabs-2.jpg" alt="" class="img-fluid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3 data-i18n="faq_q1">Delivery time?</h3>
+                <div class="faq-content"><p data-i18n="faq_a1">Usually 2-4 weeks.</p></div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Software</span></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>İstanbul, Türkiye</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-i18n="footer_useful_links">Faydalı Bağlantılar</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav_home">Ana Sayfa</a></li>
+            <li><a href="about.html" data-i18n="nav_about">Hakkımızda</a></li>
+            <li><a href="projects.html" data-i18n="nav_projects">Projelerimiz</a></li>
+            <li><a href="domain.html" data-i18n="nav_domain">Domain</a></li>
+            <li><a href="hosting.html" data-i18n="nav_hosting">Hosting</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">İletişim</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Auro<span class="nova-text">Nova</span> <span data-i18n="brand_software">Software</span></strong><span data-i18n="footer_rights">All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Shopping Cart Offcanvas -->
+  <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="offcanvasCartLabel"><i class="bi bi-cart3 me-2"></i><span data-i18n="cart_title">Sepetiniz</span></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="cart-items"></div>
+      <div class="cart-total" style="display: none;">
+        <div class="d-flex justify-content-between mb-2"><span data-i18n="cart_subtotal">Ara Toplam</span><span class="fw-bold">₺0</span></div>
+        <div class="d-flex justify-content-between fs-4 fw-bold border-top pt-3"><span data-i18n="cart_total">Toplam</span><span class="text-primary">₺0</span></div>
+      </div>
+      <button class="btn btn-primary w-100 btn-lg mt-4" data-i18n="cart_checkout">Ödemeye Geç <i class="bi bi-arrow-right ms-2"></i></button>
+    </div>
+  </div>
+
+  <div class="global-planet-decor"></div>
+  <script src="assets/js/translations.js?v=2.1"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js?v=2.1"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+name: Deploy to hosting
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Telegram config
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          node -e "const fs = require('fs'); const token = process.env.TELEGRAM_BOT_TOKEN; const chat = process.env.TELEGRAM_CHAT_ID; if (!token || !chat) { console.log('Telegram secrets not set; skipping config file.'); process.exit(0); } fs.writeFileSync('forms/telegram-config.php', '<?php\nreturn [\n    \\'bot_token\\' => ' + JSON.stringify(token) + ',\n    \\'chat_id\\' => ' + JSON.stringify(chat) + ',\n];\n');"
+
+      - name: Upload files to File Browser
+        env:
+          FILEBROWSER_URL: ${{ secrets.FILEBROWSER_URL }}
+          FILEBROWSER_USER: ${{ secrets.FILEBROWSER_USER }}
+          FILEBROWSER_PASSWORD: ${{ secrets.FILEBROWSER_PASSWORD }}
+          FILEBROWSER_REMOTE_DIR: ${{ vars.FILEBROWSER_REMOTE_DIR || '/' }}
+        run: node .github/scripts/deploy-filebrowser.mjs

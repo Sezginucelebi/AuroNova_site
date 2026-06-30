@@ -1,0 +1,19 @@
+# GitHub Pages / Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+/vendor
+Gemfile.lock
+
+# Local secrets
+forms/telegram-config.php
+
+# Editor and tool folders
+.idea/
+.vscode/
+.agents/
+.codex/
+node_modules/
+.DS_Store
+Thumbs.db
